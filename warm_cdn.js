@@ -1,8 +1,6 @@
-getURLs = event;
- 
 var http = require('http');
- 
-getURLs.forEach(function (element) {
+
+exports.getURLs = function (event, element) {
     http.get(element, function(res) {
       console.log("http get... " + element);
       console.log("Got response: " + res.statusCode );
@@ -12,4 +10,5 @@ getURLs.forEach(function (element) {
      }).on('error', function(e) {
       console.log("Got error: " + e.message);
   });
-});
+  element.succeed("Completed warm of URLs.");
+}
