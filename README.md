@@ -1,4 +1,5 @@
-Sample code to use AWS Lambda to receive and event (JSON hash) and HTTP GET the URLs.  Ideally, you would create a AWS Lambda function in each region you want to execute from.
+Sample code to use AWS Lambda to receive and event (JSON hash) and HTTP GET the URLs.  
+Ideally, you would create a AWS Lambda function in each region you want to execute from.
 
 
 ##### Create function using AWS CLI (Assumes you have zipped up your function in a .zip)
@@ -15,5 +16,4 @@ aws lambda invoke --invocation-type RequestResponse --function-name warm_cdn --r
 
 ##### TODO:
 
- ~~- Need a termination point~~
-Need better logging, it doesn't appear to log response codes
+* Need better logging, it doesn't appear to log response codes
