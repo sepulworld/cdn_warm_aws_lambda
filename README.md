@@ -4,7 +4,7 @@ Sample code to use AWS Lambda to receive and event (JSON hash) and HTTP GET the 
 ##### Create function using AWS CLI (Assumes you have zipped up your function in a .zip)
 
 ```
-aws lambda create-function --region us-west-2 --function-name warm_cdn --zip-file fileb://warm_cdn.zip --role arn:aws:iam::<YOURID>:role/executionrole --handler warm_cdn.getURLs --runtime nodej
+aws lambda create-function --region us-west-2 --function-name warm_cdn --zip-file fileb://warm_cdn.zip --role arn:aws:iam::<YOURID>:role/executionrole --handler warm_cdn.handler --runtime nodej
 ```
 
 ##### Run the function in us-west-2 (The function will log to CloudWatch for troubleshooting)
