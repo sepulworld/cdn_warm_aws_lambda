@@ -14,6 +14,3 @@ aws lambda create-function --region us-west-2 --function-name warm_cdn --zip-fil
 aws lambda invoke --invocation-type RequestResponse --function-name warm_cdn --region us-west-2 --payload file://example_event.json outputfile.txt
 ```
 
-##### TODO:
-
-* Need better logging, it doesn't appear to log response codes
