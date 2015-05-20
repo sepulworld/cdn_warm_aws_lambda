@@ -15,7 +15,10 @@ count = 0;
           console.log(count)
         }).on('error', function(e) {
           console.log("Got error: " + e.message);
-          console.log(count)
+          count++;
+          if (count == Object.keys(event).length) { 
+            callback(responses, context);
+          }
         });
 
         console.log('end request to ' + event[key]);
