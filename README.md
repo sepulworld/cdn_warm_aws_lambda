@@ -1,5 +1,7 @@
-Sample code to use AWS Lambda to receive and event (JSON hash) and HTTP GET the URLs.  
-Ideally, you would create a AWS Lambda function in each region you want to execute from.
+
+##### Summary
+
+AWS Lambda function to receive a list of URLs to HTTP GET.  Great for warming a CDN globally. 
 
 
 ##### Create function using AWS CLI (Assumes you have zipped up your function in a .zip)
