@@ -27,7 +27,7 @@ var count = 0;
 }
   
 function callback(responses, context) {
-    context.succeed(responses)
+    context.succeed(responses);
     context.done();
   }
-}
+};
